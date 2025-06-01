@@ -12,7 +12,7 @@ app = Flask(__name__)
 # Eğer frontend'iniz farklı bir portta veya domainde çalışacaksa, burayı güncellemeyi unutmayın.
 # Geliştirme aşamasında tüm kaynaklara (*) izin vermek de yaygındır:
 # CORS(app, resources={r"/*": {"origins": "*"}})
-CORS(app, origins="http://localhost:3000")
+CORS(app, recources={r"/": {"origins": "*"}})
 
 
 # Veritabanı bağlantı ayarları
