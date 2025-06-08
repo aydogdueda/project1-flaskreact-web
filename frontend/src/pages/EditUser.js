@@ -15,7 +15,7 @@ export default function EditUser(){
     }, []);
 
     function getUser(){
-        axios.get(`http://127.0.0.1:5000/userdetails/${id}`).then(function(response){
+        axios.get('https://react-web-dugta7gmcab0dhab.canadacentral-01.azurewebsites.net/userdetails/${id}').then(function(response){
             console.log(response.data);
             setInputs(response.data);
         });
