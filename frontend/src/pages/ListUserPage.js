@@ -10,7 +10,7 @@ export default function ListUserPage() {
     }, []);
 
     function getUsers() {
-        axios.get('http://localhost:5000/listusers')
+        axios.get('https://react-web-dugta7gmcab0dhab.canadacentral-01.azurewebsites.net/listusers')
             .then(function (response) {
                 console.log(response.data);
                 setUsers(response.data);
