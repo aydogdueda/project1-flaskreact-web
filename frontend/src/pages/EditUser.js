@@ -30,7 +30,7 @@ export default function EditUser(){
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.put(`http://127.0.0.1:5000/userupdate/${id}`, inputs).then(function(response){
+        axios.put(`http://react-web-dugta7gmcab0dhab.canadacentral-01.azurewebsites.net/userupdate/${id}`, inputs).then(function(response){
             console.log(response.data);
             navigate('/');
         });
