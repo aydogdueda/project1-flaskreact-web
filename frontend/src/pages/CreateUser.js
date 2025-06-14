@@ -17,7 +17,7 @@ export default function CreateUser(){
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.post('http://127.0.0.1:5000/useradd', inputs).then(function(response){
+        axios.post('http://react-web-dugta7gmcab0dhab.canadacentral-01.azurewebsites.net/useradd', inputs).then(function(response){
             console.log(response.data);
             navigate('/');
         });
