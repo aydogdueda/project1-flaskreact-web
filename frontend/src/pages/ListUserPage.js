@@ -20,7 +20,7 @@ export default function ListUserPage() {
             });
     }
     const deleteUser = (id) => {
-        axios.delete(`http://127.0.0.1:5000/userdelete/${id}`).then(function(response){
+        axios.delete(`http://react-web-dugta7gmcab0dhab.canadacentral-01.azurewebsites.net/userdelete/${id}`).then(function(response){
             console.log(response.data);
             getUsers();
         });
